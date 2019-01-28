@@ -416,6 +416,6 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'https://github.com/pangloss/vim-javascript.git'
-
+Plug 'elmcast/elm-vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
