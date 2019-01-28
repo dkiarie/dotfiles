@@ -12,7 +12,7 @@
   cl = clone
   d = diff
   f = fetch
-  p = push
+  p = pull 
   co = checkout
   br = branch
 
