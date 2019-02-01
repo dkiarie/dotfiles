@@ -75,5 +75,9 @@ alias e='vim'
 alias pip='pip3'
 alias t='todo.sh'
 alias be='bundle exec'
+
+# export nand2tetris tools on any machine that follows my directory structure
+export PATH="$PATH:~/programs/nand2tetris/tools"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
