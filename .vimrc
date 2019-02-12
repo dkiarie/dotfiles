@@ -55,7 +55,6 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,8 +87,8 @@ set cmdheight=2
 " A buffer becomes hidden when it is abandoned
 set hid
 
-" Flag lines longer than 80 characters
-match ErrorMsg '\%>80v.\+'
+" set colorcolumn=80
+" and make flag light grey
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -103,6 +102,8 @@ set smartcase
 
 " Highlight search results
 set hlsearch
+" Make it so that highlight dies on esc
+nnoremap <esc> :noh<return><esc>
 
 " Makes search act like search in modern browsers
 set incsearch 
@@ -129,10 +130,8 @@ if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
 endif
 
-
 " Add a bit extra margin to the left
 set foldcolumn=1
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -166,7 +165,6 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -174,7 +172,6 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -301,6 +298,7 @@ noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
+set clipboard+=unnamed " Yanks go on clipboard instead
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
@@ -398,6 +396,9 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+" Flag lines longer than 80 characters
+set colorcolumn=80
+highlight ColorColumn ctermbg=green guibg=black
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -416,6 +417,7 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'https://github.com/pangloss/vim-javascript.git'
-Plug 'elmcast/elm-vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+execute pathogen#infect()
