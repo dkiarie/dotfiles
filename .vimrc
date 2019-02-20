@@ -194,6 +194,8 @@ set ai "Auto indent
 set si "Smart indent
 set nowrap "don't wrap lines
 
+" Whitespace stuff
+set list listchars=tab:>-,trail:·
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
