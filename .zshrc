@@ -43,6 +43,7 @@ alias pip='pip3'
 alias be='bundle exec'
 alias bi='bundle install'
 alias rs='bundle exec rails s'
+alias rc="bundle exec rails c"
 alias rtnn='bundle exec rspec --tag "~no_network"'
 # Git Aliases
 alias gc='git clone'
