@@ -59,10 +59,11 @@ alias gpush='git push'
 #            | |
 #############|_|#########################
 
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:$HOME/scripts"
-export PATH=$PATH:$HOME/programs/nand2tetris/tools
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+
+export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:$HOME/scripts"
+export PATH=$PATH:$HOME/programs/nand2tetris/tools
 export PATH="$PATH:$HOME/.rvm/bin"

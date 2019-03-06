@@ -1,6 +1,6 @@
 [user]
-	name = David Kiarie
-	email = david@kiar.ie
+  name = David Kiarie
+  email = david@kiar.ie
 [core]
   editor = vim
 [alias]
@@ -12,7 +12,6 @@
   cl = clone
   d = diff
   f = fetch
-  p = pull 
+  p = pull
   co = checkout
   br = branch
-
