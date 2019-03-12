@@ -33,6 +33,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias l='ls -lah'
 alias e='vim'
+alias c='cat'
 alias t='todo.sh'
 alias pip='pip3'
 
