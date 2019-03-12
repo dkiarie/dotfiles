@@ -56,7 +56,7 @@ alias gcl='git clone'
 alias gf='git fetch'
 alias gp='git pull'
 alias gpush='git push'
-alias grom ='git rebase origin/master'
+alias gr='git rebase'
 alias grc='git rebase --continue'
 alias grs='git rebase --skip'
 
