@@ -54,6 +54,7 @@ alias gp="git pull"
 alias gpush="git push"
 alias grc="git rebase --continue"
 alias grs="git rebase --skip"
+alias fuckit="git reset --hard"
 
 #########################################
 #   _____                      _
