@@ -1,33 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
-"       Amir Salihefendic — @amix3k
-"
-" Awesome_version:
-"       Get this config, nice color schemes and lots of plugins!
-"
-"       Install the awesome version from:
-"
-"           https://github.com/amix/vimrc
-"
-" Sections:
-"    -> General
-"    -> VIM user interface
-"    -> Colors and Fonts
-"    -> Files and backups
-"    -> Text, tab and indent related
-"    -> Visual mode related
-"    -> Moving around, tabs and buffers
-"    -> Status line
-"    -> Editing mappings
-"    -> vimgrep searching and cope displaying
-"    -> Spell checking
-"    -> Misc
-"    -> Helper functions
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
@@ -194,7 +165,7 @@ set ai "Auto indent
 set si "Smart indent
 set nowrap "don't wrap lines
 
-" Whitespace stuff
+" display whitespace
 set list listchars=tab:>-,trail:·
 
 """"""""""""""""""""""""""""""
@@ -423,3 +394,5 @@ Plug 'https://github.com/pangloss/vim-javascript.git'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 execute pathogen#infect()
+syntax on
+filetype plugin indent on
