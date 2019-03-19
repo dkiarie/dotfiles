@@ -53,6 +53,7 @@ alias bi="bundle install"
 alias rs="bundle exec rails s"
 alias rc="bundle exec rails c"
 alias rtnn='bundle exec rspec --tag "~no_network"'
+alias rsp='bin/rspec'
 
 alias gl="git log"
 alias gs="git status"
@@ -64,8 +65,11 @@ alias gcl="git clone"
 alias gf="git fetch"
 alias gp="git pull"
 alias gpush="git push"
+alias gshow="git show"
 alias grc="git rebase --continue"
 alias grs="git rebase --skip"
+alias gcom="git checkout master"
+alias grom="git rebase origin\/master"
 alias fuckit="git reset --hard"
 
 #########################################
