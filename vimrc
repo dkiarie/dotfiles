@@ -110,6 +110,8 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
+" Json highlighting
+autocmd BufNewFile,BufRead *.json set ft=javascript
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
