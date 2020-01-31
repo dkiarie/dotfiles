@@ -20,18 +20,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
-###############################################################
-#          _             _     _           _ _
-#         (_)           | |   (_)         | (_)
-#   __   ___ _ __ ___   | |__  _ _ __   __| |_ _ __   __ _ ___
-#   \ \ / / | '_ ` _ \  | '_ \| | '_ \ / _` | | '_ \ / _` / __|
-#    \ V /| | | | | | | | |_) | | | | | (_| | | | | | (_| \__ \
-#     \_/ |_|_| |_| |_| |_.__/|_|_| |_|\__,_|_|_| |_|\__, |___/
-#                                                     __/ |
-#####################################################|___/#####
-
-
 #########################################
 #    ___  _ _
 #   / _ \| (_)
@@ -46,13 +34,7 @@ alias l="ls -lah"
 alias e="nvim"
 alias t="todo.sh"
 alias pip="pip3"
-
-alias be="bundle exec"
-alias bi="bundle install"
-alias rs="bundle exec rails s"
-alias rc="bundle exec rails c"
-alias rtnn='bundle exec rspec --tag "~no_network"'
-alias rsp='bin/rspec'
+alias code="codium"
 
 alias gl="git log"
 alias gs="git status"
@@ -85,11 +67,9 @@ alias fuckit="git reset --hard"
 #            | |
 #############|_|#########################
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
-
-export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/scripts"
-export PATH="$PATH:$HOME/programs/nand2tetris/tools"
-export PATH="$PATH:$HOME/.rvm/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
