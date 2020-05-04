@@ -1,4 +1,4 @@
-/* Remove New Tab Flashbang */
+/* Remove new tab flashbang */
 @-moz-document url(chrome://browser/content/browser.xul)
 {
    #main-window,
@@ -12,3 +12,6 @@
    }
 }
 tabbrowser tabpanels { background-color: #111 !important}
+
+/* Remove redundant tab bar  for tree style tabs */
+#TabsToolbar { visibility: collapse !important; }
