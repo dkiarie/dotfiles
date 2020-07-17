@@ -32,6 +32,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias l="ls -lah"
 alias e="nvim"
+alias js="node"
+alias py="python3"
 alias t="todo.sh"
 alias pip="pip3"
 alias code="codium"
