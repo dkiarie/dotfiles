@@ -50,7 +50,7 @@ alias gfgp="git fetch && git pull"
 alias gpush="git push"
 alias gshow="git show"
 alias gstash="git stash"
-alias gmerge="git stash"
+alias gmerge="git merge"
 alias grc="git rebase --continue"
 alias grs="git rebase --skip"
 alias gcom="git checkout master"
@@ -68,6 +68,7 @@ alias fuckit="git reset --hard"
 #############|_|#########################
 
 export PATH="$PATH:$HOME/scripts"
+export PATH="$PATH:$HOME/.local/lib/python3.6/site-packages"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
