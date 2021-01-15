@@ -16,6 +16,7 @@ COMPLETION_WAITING_DOTS="true"
 # Too many plugins slow down shell startup.
 plugins=(
   git
+  torrent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -35,7 +36,6 @@ alias e="nvim"
 alias js="node"
 alias py="python3"
 alias t="todo.sh"
-alias pip="pip3"
 alias code="codium"
 
 alias gl="git log"
@@ -58,6 +58,7 @@ alias grs="git rebase --skip"
 alias gcom="git checkout master"
 alias grom="git rebase origin\/master"
 alias fuckit="git reset --hard"
+alias F="shutdown now"
 
 #########################################
 #   _____                      _
@@ -71,8 +72,13 @@ alias fuckit="git reset --hard"
 
 export PATH="$PATH:$HOME/scripts"
 export PATH="$PATH:$HOME/.local/lib/python3.6/site-packages"
+export PATH="$PATH:/usr/local/go/bin"
+
+if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
+ export PATH="$PATH:$HOME/adb-fastboot/platform-tools"
+fi
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
