@@ -1,0 +1,12 @@
+Host illidan
+  Hostname illidan
+  User david
+  Port 22
+  ForwardAgent yes
+  AddKeysToAgent yes
+Host cenarius
+  Hostname cenarius
+  User david
+  Port 22
+  ForwardAgent yes
+  AddKeysToAgent yes
