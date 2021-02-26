@@ -386,15 +386,3 @@ if empty(glob('~/.vim/autoload/plug.vim'))
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-" Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
-Plug 'https://github.com/pangloss/vim-javascript.git'
-
-" List ends here. Plugins become visible to Vim after this call.
-call plug#end()
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
