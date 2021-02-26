@@ -1,0 +1,29 @@
+version: "2.1"
+services:
+  raneto:
+    image: ghcr.io/linuxserver/raneto
+    container_name: raneto
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=CET
+    volumes:
+      - /home/david/notes:/config
+    ports:
+      - 3008:3000
+    restart: unless-stopped
+  jellyfin:
+    image: ghcr.io/linuxserver/jellyfin
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=CET
+    volumes:
+      - /media/david/Mijn Paspoort/media:/config
+      - /media/david/Mijn Paspoort/media/tv shows:/data/tvshows
+      - /media/david/Mijn Paspoort/media/movies:/data/movies
+      - /media/david/Mijn Paspoort/media/books:/data/books
+    ports:
+      - 8096:8096
+    restart: unless-stopped
