@@ -36,7 +36,6 @@ alias e="nvim"
 alias js="node"
 alias py="python3"
 alias t="todo.sh"
-alias code="codium"
 
 alias gl="git log"
 alias gs="git status"
